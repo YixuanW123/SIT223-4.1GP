@@ -1,56 +1,102 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f7fa;
+/* UI Designer: Viru Dasanayaka (VD) */
+
+/* Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: linear-gradient(to right, #eef2f7, #f8fafc);
+    color: #1a1a1a;
     text-align: center;
 }
 
 /* Header */
 div {
-    background-color: #003366;
-    padding: 15px;
-    text-align: center;
+    background: linear-gradient(135deg, #002b5c, #004080);
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 /* Logo */
 div img {
-    width: 120px;
+    width: 110px;
 }
 
 /* Title */
 h1 {
+    margin: 30px auto 10px auto;
     font-size: 32px;
-    color: #003366;
-    margin-top: 20px;
+    font-weight: 600;
+    color: #002b5c;
+    width: 80%;
 }
 
-/* Sub headings */
+/* CARD EFFECT USING h3 */
 h3 {
-    color: #00509e;
-    margin-top: 25px;
+    background: white;
+    max-width: 800px;
+    margin: 30px auto 0 auto;
+    padding: 20px 20px 10px 20px;
+    border-radius: 12px 12px 0 0;
+    text-align: left;
+    color: #003366;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
 }
 
-/* Paragraph styling */
+/* CARD EFFECT USING p */
 p {
-    width: 70%;
-    margin: auto;
-    font-size: 15px;
-    color: #333;
-    line-height: 1.6;
+    background: white;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    border-radius: 0 0 12px 12px;
+    text-align: left;
+    line-height: 1.7;
+    color: #444;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
 }
 
-/* Button link */
+/* Hover effect (whole card illusion) */
+h3:hover,
+p:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Button */
 a {
     display: inline-block;
-    margin-top: 25px;
-    padding: 10px 20px;
-    background-color: #003366;
+    margin: 40px auto;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #002b5c, #00509e);
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
 }
 
+/* Button hover */
 a:hover {
-    background-color: #00509e;
+    transform: scale(1.07);
+    box-shadow: 0 6px 20px rgba(0,80,158,0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    h3, p {
+        max-width: 90%;
+    }
 }
