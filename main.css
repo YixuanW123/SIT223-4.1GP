@@ -1,13 +1,9 @@
-/* UI Designer: Viru Dasanayaka (VD) */
-
-/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
 body {
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
     background: linear-gradient(to right, #eef2f7, #f8fafc);
@@ -15,19 +11,17 @@ body {
     text-align: center;
 }
 
-/* Header */
 div {
     background: linear-gradient(135deg, #002b5c, #004080);
     padding: 20px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-/* Logo */
+/
 div img {
     width: 110px;
 }
 
-/* Title */
 h1 {
     margin: 30px auto 10px auto;
     font-size: 32px;
@@ -36,7 +30,6 @@ h1 {
     width: 80%;
 }
 
-/* CARD EFFECT USING h3 */
 h3 {
     background: white;
     max-width: 800px;
@@ -49,7 +42,6 @@ h3 {
     transition: 0.3s;
 }
 
-/* CARD EFFECT USING p */
 p {
     background: white;
     max-width: 800px;
@@ -63,14 +55,12 @@ p {
     transition: 0.3s;
 }
 
-/* Hover effect (whole card illusion) */
 h3:hover,
 p:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
-/* Button */
 a {
     display: inline-block;
     margin: 40px auto;
@@ -84,13 +74,11 @@ a {
     transition: 0.3s;
 }
 
-/* Button hover */
 a:hover {
     transform: scale(1.07);
     box-shadow: 0 6px 20px rgba(0,80,158,0.4);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     h1 {
         font-size: 26px;
